@@ -2,6 +2,12 @@
 
 ## A showcase of the pixel art evolution timeline as it pertains to videogames
 
+## Table of Contents
+
+1. [List of notable games](https://link)
+2. [Server structure](https://link)
+3. [Client structure](https://link)
+
 ### List of notable games:
 
 1. Pong
@@ -16,3 +22,7 @@
 10. Modern: Cave Story & Co
 
 Reference list: https://pixelation.org/index.php?topic=19575.0
+
+### Server structure
+
+### Client structure
