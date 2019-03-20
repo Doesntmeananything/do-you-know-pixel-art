@@ -4,9 +4,9 @@
 
 ## Table of Contents
 
-1. [List of notable games](https://link)
-2. [Server structure](https://link)
-3. [Client structure](https://link)
+1. [List of notable games](https://github.com/Doesntmeananything/do-you-know-pixel-art#list-of-notable-games)
+2. [Server structure](https://github.com/Doesntmeananything/do-you-know-pixel-art#server-structure)
+3. [Client structure](https://github.com/Doesntmeananything/do-you-know-pixel-art#client-structure)
 
 ### List of notable games:
 
@@ -25,4 +25,8 @@ Reference list: https://pixelation.org/index.php?topic=19575.0
 
 ### Server structure
 
+Node/Express: Implement SSR and code-splitting to optimise static resource loading.
+
 ### Client structure
+
+React/Redux: Store states about current app progress.
