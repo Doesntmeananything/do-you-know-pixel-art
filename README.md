@@ -2,6 +2,12 @@
 
 ## A showcase of the pixel art evolution timeline as it pertains to videogames
 
+## Todo
+
+- Create a slide React component
+- Hook up styling
+- Design code-splitting
+
 ## Table of Contents
 
 1. [List of notable games](https://github.com/Doesntmeananything/do-you-know-pixel-art#list-of-notable-games)
