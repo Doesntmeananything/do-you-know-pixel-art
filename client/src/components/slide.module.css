@@ -1,0 +1,15 @@
+.year {
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  max-width: 600px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
