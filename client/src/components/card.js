@@ -1,5 +1,6 @@
 import React from "react"
 import cardStyles from "./card.module.css"
+import Button from "../components/button"
 
 const Card = props => (
   <div className={cardStyles.container}>
@@ -8,6 +9,7 @@ const Card = props => (
       <p>{props.text}</p>
     </div>
     <div className={cardStyles.media}>{props.media}</div>
+    <Button />
   </div>
 )
 
