@@ -9,7 +9,8 @@ import Typography from "@material-ui/core/Typography"
 
 const styles = {
   card: {
-    maxWidth: 345,
+    maxWidth: 800,
+    maxHeight: 600,
   },
   media: {
     // ⚠️ object-fit is not supported by IE 11.
@@ -20,7 +21,7 @@ const styles = {
 function ImgMediaCard(props) {
   const { classes } = props
   return (
-    <Card className={classes.card}>
+    <Card className={classes.card} raised="true">
       <CardActionArea>
         <CardMedia
           component="img"
@@ -40,6 +41,7 @@ function ImgMediaCard(props) {
           </Typography>
         </CardContent>
       </CardActionArea>
+      <Button />
     </Card>
   )
 }

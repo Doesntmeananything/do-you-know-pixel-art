@@ -1,10 +1,10 @@
 import React from "react"
-import titularYearStyles from "./titular-year.module.css"
+import Typography from "@material-ui/core/Typography"
 
 const TitularYear = props => (
-  <div className={titularYearStyles.year}>
+  <Typography variant="h1">
     <h1>{props.year}</h1>
-  </div>
+  </Typography>
 )
 
 export default TitularYear
