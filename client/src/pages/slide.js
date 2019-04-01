@@ -7,10 +7,6 @@ export default () => (
   <>
     <BackgroundLayer />
     <TitularYear year="1975" />
-    <Card
-      title="Space Invaders"
-      text="This is a text about this game."
-      media="Some image"
-    />
+    <Card />
   </>
 )
