@@ -1,10 +1,4 @@
 import React from "react"
-import buttonStyle from "./button.module.css"
+import Button from "@material-ui/core/Button"
 
-const Button = () => (
-  <button className={buttonStyle.button} type="button">
-    Press Me
-  </button>
-)
-
-export default Button
+export default () => <Button variant="contained">Press Me</Button>
