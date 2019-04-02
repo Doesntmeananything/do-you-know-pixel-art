@@ -53,7 +53,9 @@ function Layout(props) {
             <ImageGridList />
             <Grid container className={classes.button}>
               <MuiThemeProvider theme={theme}>
-                <Button color="secondary">Next Slide</Button>
+                <Button variant="contained" color="secondary">
+                  Next Slide
+                </Button>
               </MuiThemeProvider>
             </Grid>
           </Grid>
