@@ -5,6 +5,16 @@ import Paper from "@material-ui/core/Paper"
 import Typography from "@material-ui/core/Typography"
 import ImageGridList from "./imageGridList"
 import Button from "@material-ui/core/Button"
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles"
+import purple from "@material-ui/core/colors/purple"
+
+const theme = createMuiTheme({
+  palette: {
+    primary: { main: purple[500] },
+    secondary: { main: "#11cb5f" },
+  },
+  typography: { useNextVariants: true },
+})
 
 const styles = theme => ({
   root: {
@@ -15,7 +25,7 @@ const styles = theme => ({
   },
   paper: {
     padding: theme.spacing.unit * 2,
-    minWidth: 800,
+    minWidth: 320,
     minHeight: 400,
   },
   button: {
@@ -39,10 +49,12 @@ function Layout(props) {
               coming soon.
             </Typography>
           </Grid>
-          <Grid item>
-            <ImageGridList className={classes.imageGridList} />
+          <Grid item className={classes.imageGridList}>
+            <ImageGridList />
             <Grid container className={classes.button}>
-              <Button>Next Slide</Button>
+              <MuiThemeProvider theme={theme}>
+                <Button color="secondary">Next Slide</Button>
+              </MuiThemeProvider>
             </Grid>
           </Grid>
         </Grid>
