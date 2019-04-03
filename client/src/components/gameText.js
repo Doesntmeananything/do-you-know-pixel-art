@@ -4,6 +4,9 @@ import Typography from "@material-ui/core/Typography"
 function GameText(props) {
   return (
     <div>
+      <Typography gutterBottom={true} variant="subtitle1">
+        1981
+      </Typography>
       <Typography gutterBottom={true} variant="title">
         Space Invaders
       </Typography>
