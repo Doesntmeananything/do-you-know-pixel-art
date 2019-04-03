@@ -14,7 +14,7 @@ function ImageGridList(props) {
   return (
     <div className={classes.root}>
       <GridList
-        cellHeight="160"
+        cellHeight="140"
         className={classes.gridList}
         cols={3}
         spacing={8}
