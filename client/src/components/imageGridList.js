@@ -5,17 +5,7 @@ import GridListTile from "@material-ui/core/GridListTile"
 import tileData from "./tileData"
 
 const styles = theme => ({
-  root: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    overflow: "hidden",
-    backgroundColor: theme.palette.background.paper,
-  },
-  gridList: {
-    width: 500,
-    height: 400,
-  },
+  root: {},
 })
 
 function ImageGridList(props) {
