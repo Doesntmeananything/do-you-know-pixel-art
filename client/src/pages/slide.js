@@ -4,30 +4,62 @@ import GameText from "../components/gameText"
 import ImageGridList from "../components/imageGridList"
 import Grid from "@material-ui/core/Grid"
 import Button from "@material-ui/core/Button"
+import { withStyles } from "@material-ui/core/styles"
 
-export default () => (
-  <>
-    <Grid
-      container
-      style={{
-        justifyContent: "center",
-        alignItems: "center",
-        minHeight: "100vh",
-      }}
-    >
-      <SlidePaper>
-        <Grid container spacing={16} style={{ maxWidth: 1100 }}>
-          <Grid item style={{ maxWidth: "50%" }}>
-            <GameText />
+const styles = theme => ({
+  root: {
+    justifyContent: "center",
+    alignItems: "center",
+    minHeight: "100vh",
+  },
+  container: {
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: "none",
+    },
+    [theme.breakpoints.up("sm")]: {
+      maxWidth: 1100,
+    },
+  },
+  text: {
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: "none",
+    },
+    [theme.breakpoints.up("sm")]: {
+      maxWidth: "50%",
+    },
+  },
+  images: {
+    textAlign: "center",
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: "none",
+    },
+    [theme.breakpoints.up("sm")]: {
+      maxWidth: "50%",
+    },
+  },
+})
+
+function Slide(props) {
+  const { classes } = props
+  return (
+    <>
+      <Grid container className={classes.root}>
+        <SlidePaper>
+          <Grid container spacing={16} className={classes.container}>
+            <Grid item className={classes.text}>
+              <GameText />
+            </Grid>
+            <Grid item className={classes.images}>
+              <ImageGridList />
+              <Button variant="contained" style={{ marginTop: "16px" }}>
+                Next Slide
+              </Button>
+            </Grid>
           </Grid>
-          <Grid item style={{ maxWidth: "50%", textAlign: "center" }}>
-            <ImageGridList />
-            <Button variant="raised" style={{ marginTop: "16px" }}>
-              Next Slide
-            </Button>
-          </Grid>
-        </Grid>
-      </SlidePaper>
-    </Grid>
-  </>
-)
+        </SlidePaper>
+      </Grid>
+    </>
+  )
+}
+
+export default withStyles(styles)(Slide)
