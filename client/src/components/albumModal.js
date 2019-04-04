@@ -34,8 +34,8 @@ class AlbumModal extends React.Component {
     return (
       <div>
         <Modal
-          aria-labelledby="simple-modal-title"
-          aria-describedby="simple-modal-description"
+          aria-labelledby="game-gallery"
+          aria-describedby="check-art-in-detail"
           open={this.props.open}
           onClose={this.props.handleClose}
         >
