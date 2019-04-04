@@ -1,8 +1,6 @@
 import React from "react"
 import { withStyles } from "@material-ui/core/styles"
-import Typography from "@material-ui/core/Typography"
 import Modal from "@material-ui/core/Modal"
-import Button from "@material-ui/core/Button"
 
 function rand() {
   return Math.round(Math.random() * 20) - 10
@@ -30,30 +28,16 @@ const styles = theme => ({
   },
 })
 
-class SimpleModal extends React.Component {
-  state = {
-    open: false,
-  }
-
-  handleOpen = () => {
-    this.setState({ open: true })
-  }
-
-  handleClose = () => {
-    this.setState({ open: false })
-  }
-
+class AlbumModal extends React.Component {
   render() {
     const { classes } = this.props
-
     return (
       <div>
-        <Button onClick={this.handleOpen}>Open Modal</Button>
         <Modal
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
-          open={this.state.open}
-          onClose={this.handleClose}
+          open={this.props.open}
+          onClose={this.props.handleClose}
         >
           <div style={getModalStyle()} className={classes.paper}>
             {this.props.children}
@@ -64,4 +48,4 @@ class SimpleModal extends React.Component {
   }
 }
 
-export default withStyles(styles)(SimpleModal)
+export default withStyles(styles)(AlbumModal)

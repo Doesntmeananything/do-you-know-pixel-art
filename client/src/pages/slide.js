@@ -4,8 +4,6 @@ import GameText from "../components/gameText"
 import ImageGridList from "../components/imageGridList"
 import Grid from "@material-ui/core/Grid"
 import Button from "@material-ui/core/Button"
-import ImageStepper from "../components/imageStepper"
-import AlbumModal from "../components/albumModal"
 import { withStyles } from "@material-ui/core/styles"
 
 const styles = theme => ({
@@ -62,9 +60,6 @@ function Slide(props) {
               <Button variant="contained" style={{ marginTop: "16px" }}>
                 Next Slide
               </Button>
-              <AlbumModal>
-                <ImageStepper />
-              </AlbumModal>
             </Grid>
           </Grid>
         </SlidePaper>
