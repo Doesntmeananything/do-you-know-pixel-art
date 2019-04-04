@@ -6,6 +6,13 @@ import tileData from "./tileData"
 
 const styles = theme => ({
   root: {},
+  tile: {
+    cursor: "zoom-in",
+    transition: "0.4s",
+    "&:hover": {
+      opacity: 0.6,
+    },
+  },
 })
 
 function ImageGridList(props) {
