@@ -4,7 +4,7 @@
 
 ## Todo
 
-- Create a slide React component
+- Create a slide React component ✔️
 - Hook up styling
 - Design code-splitting
 
