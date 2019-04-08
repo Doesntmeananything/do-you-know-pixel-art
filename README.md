@@ -21,7 +21,7 @@
 3. Pacman
 4. Super Mario Brothers
 5. Castlevania 3
-6. Sonic
+6. Sonic (?)
 7. Super Metroid
 8. Castlevania SOTN
 9. SF 3rd Strike
