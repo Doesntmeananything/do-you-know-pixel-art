@@ -25,7 +25,7 @@
 7. Super Metroid
 8. Castlevania SOTN (?)
 9. SF 3rd Strike
-10. Modern: Cave Story & Co
+10. Modern: Cave Story, Spelunky & Co
 
 Reference list: https://pixelation.org/index.php?topic=19575.0
 
