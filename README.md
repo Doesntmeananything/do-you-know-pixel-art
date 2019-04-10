@@ -6,7 +6,7 @@
 
 - Create a slide React component ✔️
 - Hook up styling
-- Design code-splitting
+- Design a code-splitting approach
 
 ## Table of Contents
 
