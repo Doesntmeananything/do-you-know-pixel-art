@@ -31,7 +31,9 @@ Reference list: https://pixelation.org/index.php?topic=19575.0
 
 ### Server structure
 
-Node/Express: Implement SSR and code-splitting to optimise static resource loading.
+Under consideration. Dubious necessity if the client-side static resource optimisation is good enough.
+
+Otherwise, looking at Node/Express: Implement SSR and code-splitting to optimise static resource loading.
 
 ### Client structure
 
