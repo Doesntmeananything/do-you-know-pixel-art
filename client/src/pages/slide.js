@@ -3,8 +3,6 @@ import { withStyles } from "@material-ui/core/styles"
 import SlidePaper from "../components/slidePaper"
 import GameText from "../components/gameText"
 import ImageGridList from "../components/imageGridList"
-import Grid from "@material-ui/core/Grid"
-import Button from "@material-ui/core/Button"
 import NextSlideButton from "../components/nextSlideButton"
 
 const styles = theme => ({})
