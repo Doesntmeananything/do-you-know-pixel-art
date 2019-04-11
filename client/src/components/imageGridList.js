@@ -1,5 +1,6 @@
 import React from "react"
 import { withStyles } from "@material-ui/core/styles"
+import Grid from "@material-ui/core/Grid"
 import GridList from "@material-ui/core/GridList"
 import GridListTile from "@material-ui/core/GridListTile"
 import tileData from "./tileData"
@@ -7,7 +8,15 @@ import AlbumModal from "../components/albumModal"
 import ImageStepper from "../components/imageStepper"
 
 const styles = theme => ({
-  root: {},
+  images: {
+    textAlign: "center",
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: "none",
+    },
+    [theme.breakpoints.up("sm")]: {
+      maxWidth: "50%",
+    },
+  },
   tile: {
     cursor: "zoom-in",
     transition: "0.4s",
@@ -33,7 +42,7 @@ class ImageGridList extends React.Component {
   render() {
     const { classes } = this.props
     return (
-      <div className={classes.root}>
+      <Grid item className={classes.images}>
         <GridList
           cellHeight="140"
           className={classes.gridList}
@@ -54,7 +63,7 @@ class ImageGridList extends React.Component {
         <AlbumModal open={this.state.modalOpen} handleClose={this.handleClose}>
           <ImageStepper />
         </AlbumModal>
-      </div>
+      </Grid>
     )
   }
 }

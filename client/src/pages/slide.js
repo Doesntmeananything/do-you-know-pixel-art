@@ -6,64 +6,32 @@ import Grid from "@material-ui/core/Grid"
 import Button from "@material-ui/core/Button"
 import { withStyles } from "@material-ui/core/styles"
 
-const styles = theme => ({
-  root: {
-    justifyContent: "center",
-    alignItems: "center",
-    minHeight: "100vh",
-  },
-  container: {
-    [theme.breakpoints.down("sm")]: {
-      maxWidth: "none",
-    },
-    [theme.breakpoints.up("sm")]: {
-      maxWidth: 900,
-    },
-    [theme.breakpoints.up("lg")]: {
-      maxWidth: 1100,
-    },
-    [theme.breakpoints.up("xl")]: {
-      maxWidth: 2300,
-    },
-  },
-  text: {
-    [theme.breakpoints.down("sm")]: {
-      maxWidth: "none",
-    },
-    [theme.breakpoints.up("sm")]: {
-      maxWidth: "50%",
-    },
-  },
-  images: {
-    textAlign: "center",
-    [theme.breakpoints.down("sm")]: {
-      maxWidth: "none",
-    },
-    [theme.breakpoints.up("sm")]: {
-      maxWidth: "50%",
-    },
-  },
-})
+const styles = theme => ({})
 
 function Slide(props) {
   const { classes } = props
   return (
     <>
-      <Grid container className={classes.root}>
-        <SlidePaper>
-          <Grid container spacing={16} className={classes.container}>
-            <Grid item className={classes.text}>
-              <GameText />
-            </Grid>
-            <Grid item className={classes.images}>
-              <ImageGridList />
-              <Button variant="contained" style={{ marginTop: "16px" }}>
-                Next Slide
-              </Button>
-            </Grid>
-          </Grid>
-        </SlidePaper>
-      </Grid>
+      <SlidePaper>
+        <GameText
+          year="1978"
+          title="Space Invaders"
+          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio minima quibusdam molestiae modi fugiat sed, maxime enim voluptatibus ducimus? Illo repellat nostrum labore odit voluptatibus, provident temporibus quas consequuntur possimus assumenda, minima eaque. Facere ab voluptate suscipit voluptatem voluptates aut nam sed ea inventore atque? Error voluptatibus id explicabo eum?"
+        />
+        <ImageGridList />
+        <Grid
+          container
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            padding: "16px",
+          }}
+        >
+          <Button variant="contained" style={{}}>
+            Next Slide
+          </Button>
+        </Grid>
+      </SlidePaper>
     </>
   )
 }

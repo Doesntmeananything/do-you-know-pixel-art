@@ -1,25 +1,32 @@
 import React from "react"
+import { withStyles } from "@material-ui/core/styles"
 import Typography from "@material-ui/core/Typography"
+import Grid from "@material-ui/core/Grid"
+
+const styles = theme => ({
+  text: {
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: "none",
+    },
+    [theme.breakpoints.up("sm")]: {
+      maxWidth: "50%",
+    },
+  },
+})
 
 function GameText(props) {
+  const { classes } = props
   return (
-    <div>
+    <Grid item className={classes.text}>
       <Typography gutterBottom={true} variant="subtitle1">
-        1981
+        {props.year}
       </Typography>
       <Typography gutterBottom={true} variant="title">
-        Space Invaders
+        {props.title}
       </Typography>
-      <Typography variant="body2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-        molestiae consequatur voluptatum, fugit nesciunt reprehenderit voluptas
-        ratione rem cum magni possimus corporis dolorum pariatur fugiat quis,
-        doloremque nisi corrupti explicabo, modi harum. Ab quae suscipit vero
-        commodi nostrum sed illo quo, iusto rerum atque voluptate veniam magnam
-        ex? Suscipit, dolorum?
-      </Typography>
-    </div>
+      <Typography variant="body2">{props.description}</Typography>
+    </Grid>
   )
 }
 
-export default GameText
+export default withStyles(styles)(GameText)
