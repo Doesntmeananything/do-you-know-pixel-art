@@ -3,13 +3,12 @@ import { withStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 import GridList from "@material-ui/core/GridList"
 import GridListTile from "@material-ui/core/GridListTile"
-import tileData from "./tileData"
 import AlbumModal from "../components/albumModal"
 import ImageStepper from "../components/imageStepper"
+import PlayIcon from "@material-ui/icons/PlayCircleOutline"
 
 const styles = theme => ({
   images: {
-    textAlign: "center",
     [theme.breakpoints.down("sm")]: {
       maxWidth: "none",
     },
@@ -40,13 +39,13 @@ class ImageGridList extends React.Component {
   }
 
   render() {
-    const { classes } = this.props
+    const { classes, tileData, columns, cellHeight } = this.props
     return (
       <Grid item className={classes.images}>
         <GridList
-          cellHeight="140"
+          cellHeight={cellHeight}
           className={classes.gridList}
-          cols={3}
+          cols={columns}
           spacing={8}
         >
           {tileData.map(tile => (
@@ -56,6 +55,20 @@ class ImageGridList extends React.Component {
               cols={tile.cols || 1}
               onClick={this.handleOpen}
             >
+              {tile.isVideo && (
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    color: "lightcyan",
+                    zIndex: "1",
+                  }}
+                >
+                  <PlayIcon style={{ fontSize: "4rem" }} color="primary" />
+                </div>
+              )}
               <img src={tile.img} alt={tile.title} />
             </GridListTile>
           ))}
