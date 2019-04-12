@@ -18,13 +18,13 @@ function GameText(props) {
   const { classes } = props
   return (
     <Grid item className={classes.text}>
-      <Typography gutterBottom={true} variant="subtitle1">
+      <Typography gutterBottom={true} variant="h6">
         {props.year}
       </Typography>
-      <Typography gutterBottom={true} variant="title">
+      <Typography gutterBottom={true} variant="h4">
         {props.title}
       </Typography>
-      <Typography variant="body2">{props.description}</Typography>
+      <Typography variant="subtitle1">{props.description}</Typography>
     </Grid>
   )
 }
