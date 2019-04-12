@@ -23,7 +23,7 @@ function Slide(props) {
           tileData={tileData}
           columns={2}
           cellHeight="160"
-          mediaSteps={mediaSteps}
+          // mediaSteps={mediaSteps}
         />
         <NextSlideButton text="Next Slide" />
       </SlidePaper>

@@ -10,20 +10,22 @@ import SwipeableViews from "react-swipeable-views"
 
 const styles = theme => ({
   root: {
-    maxWidth: 400,
     flexGrow: 1,
+    maxWidth: "75vw",
   },
   header: {
     display: "flex",
     alignItems: "center",
+    justifyContent: "center",
     height: 50,
     paddingLeft: theme.spacing.unit * 4,
     backgroundColor: theme.palette.background.default,
   },
   img: {
-    height: 255,
-    display: "block",
-    maxWidth: 400,
+    alignItems: "center",
+    justifyContent: "center",
+    maxHeight: "75vh",
+    maxWidth: "50vw",
     overflow: "hidden",
     width: "100%",
   },

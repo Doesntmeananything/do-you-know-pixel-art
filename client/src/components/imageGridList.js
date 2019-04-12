@@ -39,7 +39,7 @@ class ImageGridList extends React.Component {
   }
 
   render() {
-    const { classes, tileData, columns, cellHeight, mediaSteps } = this.props
+    const { classes, tileData, columns, cellHeight, children } = this.props
     return (
       <Grid item className={classes.images}>
         <GridList
@@ -74,7 +74,8 @@ class ImageGridList extends React.Component {
           ))}
         </GridList>
         <AlbumModal open={this.state.modalOpen} handleClose={this.handleClose}>
-          <ImageStepper mediaSteps={mediaSteps} />
+          {/* <ImageStepper mediaSteps={mediaSteps} /> */}
+          {children}
         </AlbumModal>
       </Grid>
     )
