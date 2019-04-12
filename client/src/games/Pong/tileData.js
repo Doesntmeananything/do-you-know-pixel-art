@@ -1,4 +1,3 @@
-import React from "react"
 import image1 from "../../../public/static/media/Pong/Pong1.png"
 import image2 from "../../../public/static/media/Pong/Pong2Cabinet.jpg"
 
