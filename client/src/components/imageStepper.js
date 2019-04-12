@@ -22,10 +22,8 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.default,
   },
   img: {
-    alignItems: "center",
-    justifyContent: "center",
+    alignItemtent: "center",
     maxHeight: "75vh",
-    maxWidth: "50vw",
     overflow: "hidden",
     width: "100%",
   },
@@ -69,15 +67,16 @@ class SwipeableTextMobileStepper extends React.Component {
           enableMouseEvents
         >
           {mediaSteps.map((step, index) => (
-            <div key={step.label}>
+            <>
               {Math.abs(activeStep - index) <= 2 ? (
                 <img
                   className={classes.img}
                   src={step.imgPath}
                   alt={step.label}
+                  key={step.label}
                 />
               ) : null}
-            </div>
+            </>
           ))}
         </SwipeableViews>
         <MobileStepper
