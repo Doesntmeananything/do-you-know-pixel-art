@@ -4,8 +4,8 @@ import Grid from "@material-ui/core/Grid"
 import GridList from "@material-ui/core/GridList"
 import GridListTile from "@material-ui/core/GridListTile"
 import AlbumModal from "../components/albumModal"
-import ImageStepper from "../components/imageStepper"
 import PlayIcon from "@material-ui/icons/PlayCircleOutline"
+import Lightbox from "react-images"
 
 const styles = theme => ({
   images: {
@@ -28,14 +28,36 @@ const styles = theme => ({
 class ImageGridList extends React.Component {
   state = {
     modalOpen: false,
+    currentImage: 0,
   }
 
-  handleOpen = () => {
-    this.setState({ modalOpen: true })
+  handleOpen = index => {
+    this.setState({ currentImage: index, modalOpen: true })
   }
 
   handleClose = () => {
-    this.setState({ modalOpen: false })
+    this.setState({ modalOpen: false, currentImage: 0 })
+  }
+
+  gotoPrevious = () => {
+    this.setState({
+      currentImage: this.state.currentImage - 1,
+    })
+  }
+  gotoNext = () => {
+    this.setState({
+      currentImage: this.state.currentImage + 1,
+    })
+  }
+  gotoImage = index => {
+    this.setState({
+      currentImage: index,
+    })
+  }
+  handleClickImage = () => {
+    if (this.state.currentImage === this.props.images.length - 1) return
+
+    this.gotoNext()
   }
 
   render() {
@@ -48,12 +70,12 @@ class ImageGridList extends React.Component {
           cols={columns}
           spacing={8}
         >
-          {tileData.map(tile => (
+          {tileData.map((tile, index) => (
             <GridListTile
               className={classes.tile}
-              key={tile.img}
+              key={index}
               cols={tile.cols || 1}
-              onClick={this.handleOpen}
+              onClick={() => this.handleOpen(index)}
             >
               {tile.isVideo && (
                 <div
@@ -74,7 +96,18 @@ class ImageGridList extends React.Component {
           ))}
         </GridList>
         <AlbumModal open={this.state.modalOpen} handleClose={this.handleClose}>
-          <ImageStepper mediaSteps={mediaSteps} />
+          <Lightbox
+            images={mediaSteps}
+            isOpen={this.state.modalOpen}
+            currentImage={this.state.currentImage}
+            onClose={this.handleClose}
+            onClickImage={this.handleClickImage}
+            onClickNext={this.gotoNext}
+            onClickPrev={this.gotoPrevious}
+            onClickThumbnail={this.gotoImage}
+            backdropClosesModal={true}
+            showCloseButton={false}
+          />
         </AlbumModal>
       </Grid>
     )
