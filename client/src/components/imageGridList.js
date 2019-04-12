@@ -54,11 +54,6 @@ class ImageGridList extends React.Component {
       currentImage: index,
     })
   }
-  handleClickImage = () => {
-    if (this.state.currentImage === this.props.images.length - 1) return
-
-    this.gotoNext()
-  }
 
   render() {
     const { classes, tileData, columns, cellHeight, mediaSteps } = this.props
@@ -101,7 +96,6 @@ class ImageGridList extends React.Component {
             isOpen={this.state.modalOpen}
             currentImage={this.state.currentImage}
             onClose={this.handleClose}
-            onClickImage={this.handleClickImage}
             onClickNext={this.gotoNext}
             onClickPrev={this.gotoPrevious}
             onClickThumbnail={this.gotoImage}
