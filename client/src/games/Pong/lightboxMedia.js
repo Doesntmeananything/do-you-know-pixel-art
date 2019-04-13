@@ -1,7 +1,7 @@
 import image1 from "../../../public/static/media/Pong/Pong1.png"
 import image2 from "../../../public/static/media/Pong/Pong2Cabinet.jpg"
 
-const mediaSteps = [
+const lightboxMedia = [
   {
     caption: "Classic fast-paced arcade experience.",
     src: "http://i.ytimg.com/vi/fiShX2pTz9A/hqdefault.jpg",
@@ -18,4 +18,4 @@ const mediaSteps = [
   },
 ]
 
-export default mediaSteps
+export default lightboxMedia
