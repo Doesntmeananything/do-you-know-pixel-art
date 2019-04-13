@@ -118,6 +118,4 @@ class SwipeableTextMobileStepper extends React.Component {
   }
 }
 
-export default withStyles(styles, { withTheme: true })(
-  SwipeableTextMobileStepper
-)
+export default withStyles(styles)(SwipeableTextMobileStepper)
