@@ -22,7 +22,7 @@ function Slide(props) {
         <ImageGridList
           tileData={tileData}
           columns={2}
-          cellHeight="160"
+          cellHeight={160}
           lightboxMedia={lightboxMedia}
         />
         <NextSlideButton text="Next Slide" />
