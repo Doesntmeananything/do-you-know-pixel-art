@@ -5,7 +5,7 @@ import GameText from "../../components/gameText"
 import ImageGridList from "../../components/imageGridList"
 import NextSlideButton from "../../components/nextSlideButton"
 import tileData from "./tileData"
-import lightboxMedia from "./lightboxMedia"
+import lightboxContent from "./lightboxContent"
 
 const styles = theme => ({})
 
@@ -23,7 +23,7 @@ function Slide(props) {
           tileData={tileData}
           columns={2}
           cellHeight={160}
-          lightboxMedia={lightboxMedia}
+          lightboxContent={lightboxContent}
         />
         <NextSlideButton text="Next Slide" />
       </SlidePaper>

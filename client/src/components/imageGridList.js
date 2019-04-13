@@ -56,7 +56,13 @@ class ImageGridList extends React.Component {
   }
 
   render() {
-    const { classes, tileData, columns, cellHeight, lightboxMedia } = this.props
+    const {
+      classes,
+      tileData,
+      columns,
+      cellHeight,
+      lightboxContent,
+    } = this.props
     const { currentImage, lightboxOpen } = this.state
 
     return (
@@ -94,9 +100,10 @@ class ImageGridList extends React.Component {
         </GridList>
         {lightboxOpen && (
           <Lightbox
-            mainSrc={lightboxMedia[currentImage]}
-            nextSrc={lightboxMedia[currentImage + 1]}
-            prevSrc={lightboxMedia[currentImage - 1]}
+            mainSrc={lightboxContent.media[currentImage]}
+            nextSrc={lightboxContent.media[currentImage + 1]}
+            prevSrc={lightboxContent.media[currentImage - 1]}
+            imageCaption={lightboxContent.description[currentImage]}
             onCloseRequest={this.handleClose}
             onMoveNextRequest={this.gotoNext}
             onMovePrevRequest={this.gotoPrevious}
