@@ -5,7 +5,8 @@ import GridList from "@material-ui/core/GridList"
 import GridListTile from "@material-ui/core/GridListTile"
 import AlbumModal from "../components/albumModal"
 import PlayIcon from "@material-ui/icons/PlayCircleOutline"
-import Lightbox from "react-images"
+import Lightbox from "lightbox-react"
+import "lightbox-react/style.css"
 
 const styles = theme => ({
   images: {
@@ -56,7 +57,7 @@ class ImageGridList extends React.Component {
   }
 
   render() {
-    const { classes, tileData, columns, cellHeight, mediaSteps } = this.props
+    const { classes, tileData, columns, cellHeight, lightboxMedia } = this.props
     return (
       <Grid item className={classes.images}>
         <GridList
@@ -92,12 +93,18 @@ class ImageGridList extends React.Component {
         </GridList>
         <AlbumModal open={this.state.modalOpen} handleClose={this.handleClose}>
           <Lightbox
-            images={mediaSteps}
+            mainSrc={lightboxMedia[currentImage]}
+            nextSrc={lightboxMedia[currentImage + 1] % lightboxMedia.length}
+            prevSrc={
+              lightboxMedia[
+                (currentImage + lightboxMedia.length - 1) % lightboxMedia.length
+              ]
+            }
             isOpen={this.state.modalOpen}
             currentImage={this.state.currentImage}
-            onClose={this.handleClose}
-            onClickNext={this.gotoNext}
-            onClickPrev={this.gotoPrevious}
+            onCloseRequest={this.handleClose}
+            onMoveNextRequest={this.gotoNext}
+            onMovePrevRequest={this.gotoPrevious}
             onClickThumbnail={this.gotoImage}
             backdropClosesModal={true}
             showCloseButton={false}
