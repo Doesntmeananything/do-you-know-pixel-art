@@ -3,7 +3,6 @@ import { withStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 import GridList from "@material-ui/core/GridList"
 import GridListTile from "@material-ui/core/GridListTile"
-import AlbumModal from "../components/albumModal"
 import PlayIcon from "@material-ui/icons/PlayCircleOutline"
 import Lightbox from "lightbox-react"
 import "lightbox-react/style.css"
@@ -28,27 +27,27 @@ const styles = theme => ({
 
 class ImageGridList extends React.Component {
   state = {
-    modalOpen: false,
+    lightboxOpen: false,
     currentImage: 0,
   }
 
   handleOpen = index => {
-    this.setState({ currentImage: index, modalOpen: true })
+    this.setState({ currentImage: index, lightboxOpen: true })
   }
 
   handleClose = () => {
-    this.setState({ modalOpen: false, currentImage: 0 })
+    this.setState({ lightboxOpen: false, currentImage: 0 })
   }
 
   gotoPrevious = () => {
-    this.setState({
-      currentImage: this.state.currentImage - 1,
-    })
+    this.setState(({ currentImage }) => ({
+      currentImage: currentImage - 1,
+    }))
   }
   gotoNext = () => {
-    this.setState({
-      currentImage: this.state.currentImage + 1,
-    })
+    this.setState(({ currentImage }) => ({
+      currentImage: currentImage + 1,
+    }))
   }
   gotoImage = index => {
     this.setState({
@@ -58,6 +57,8 @@ class ImageGridList extends React.Component {
 
   render() {
     const { classes, tileData, columns, cellHeight, lightboxMedia } = this.props
+    const { currentImage, lightboxOpen } = this.state
+
     return (
       <Grid item className={classes.images}>
         <GridList
@@ -91,25 +92,19 @@ class ImageGridList extends React.Component {
             </GridListTile>
           ))}
         </GridList>
-        <AlbumModal open={this.state.modalOpen} handleClose={this.handleClose}>
+        {lightboxOpen && (
           <Lightbox
             mainSrc={lightboxMedia[currentImage]}
-            nextSrc={lightboxMedia[currentImage + 1] % lightboxMedia.length}
-            prevSrc={
-              lightboxMedia[
-                (currentImage + lightboxMedia.length - 1) % lightboxMedia.length
-              ]
-            }
-            isOpen={this.state.modalOpen}
-            currentImage={this.state.currentImage}
+            nextSrc={lightboxMedia[currentImage + 1]}
+            prevSrc={lightboxMedia[currentImage - 1]}
             onCloseRequest={this.handleClose}
             onMoveNextRequest={this.gotoNext}
             onMovePrevRequest={this.gotoPrevious}
             onClickThumbnail={this.gotoImage}
-            backdropClosesModal={true}
-            showCloseButton={false}
+            enableZoom={currentImage > 0}
+            style={{ display: "flex", placeItems: "center" }}
           />
-        </AlbumModal>
+        )}
       </Grid>
     )
   }
