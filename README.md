@@ -37,4 +37,4 @@ Otherwise, looking at Node/Express: Implement SSR and code-splitting to optimise
 
 ### Client structure
 
-React/Redux: Store states about current app progress.
+React: Store states about current app progress and component interactions.
