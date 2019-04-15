@@ -27,7 +27,7 @@ const lightboxContent = {
   description: [
     "Classic fast paced arcade experience",
     "The artistic choices, albeit technically limited, work to accentuate what's important in the gameplay",
-    "The bright colours of the arcade machine frame the screen and serve as an invitation to the players",
+    "The bright colours of the arcade machine frame the screen and serve as a warm invitation to the players",
   ],
 }
 

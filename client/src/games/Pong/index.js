@@ -7,8 +7,6 @@ import NextSlideButton from "../../components/nextSlideButton"
 import tileData from "./tileData"
 import lightboxContent from "./lightboxContent"
 
-const styles = theme => ({})
-
 function Slide(props) {
   const { classes, color } = props
   return (
