@@ -12,7 +12,7 @@ function NextSlideButton(props) {
         padding: "16px",
       }}
     >
-      <Button variant="contained" style={{}}>
+      <Button variant="contained" color="primary">
         {props.text}
       </Button>
     </Grid>
