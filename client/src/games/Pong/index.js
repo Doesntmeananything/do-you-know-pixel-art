@@ -22,7 +22,7 @@ function Slide(props) {
         cellHeight={160}
         lightboxContent={lightboxContent}
       />
-      <NextSlideButton text="What's next?" />
+      <NextSlideButton text="Let's continue!" />
     </SlidePaper>
   )
 }
