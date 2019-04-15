@@ -1,5 +1,5 @@
 import React from "react"
-import Pong from "../games/Pong/index"
+import Pong from "../games/Pong"
 import "typeface-roboto"
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles"
 
@@ -20,7 +20,7 @@ const theme = createMuiTheme({
 function PongSlide() {
   return (
     <MuiThemeProvider theme={theme}>
-      <Pong />
+      <Pong color={theme.palette.primary.main} />
     </MuiThemeProvider>
   )
 }

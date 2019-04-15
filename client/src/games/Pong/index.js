@@ -10,9 +10,9 @@ import lightboxContent from "./lightboxContent"
 const styles = theme => ({})
 
 function Slide(props) {
-  const { classes } = props
+  const { classes, color } = props
   return (
-    <SlidePaper>
+    <SlidePaper color={color}>
       <GameText
         year="1972"
         title="Pong"

@@ -8,7 +8,6 @@ const styles = theme => ({
     justifyContent: "center",
     alignItems: "center",
     minHeight: "100vh",
-    backgroundColor: "#fbc02d",
   },
   paper: {
     ...theme.mixins.gutters(),
@@ -32,9 +31,9 @@ const styles = theme => ({
 })
 
 function SlidePaper(props) {
-  const { classes, theme } = props
+  const { classes, theme, color } = props
   return (
-    <Grid container className={classes.root}>
+    <Grid container className={classes.root} style={{ backgroundColor: color }}>
       <Paper className={classes.paper} elevation={6}>
         <Grid container spacing={16} className={classes.container}>
           {props.children}
