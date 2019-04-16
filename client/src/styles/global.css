@@ -1,3 +1,4 @@
+/* Remove default margins and set the default font-family for non Material-UI components */
 body {
   margin: 0;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
