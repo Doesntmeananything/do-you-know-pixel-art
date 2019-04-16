@@ -1,15 +1,14 @@
 import React from "react"
-import Pong from "../games/Pong"
+import SpaceInvaders from "../games/SpaceInvaders"
 import "typeface-roboto"
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles"
+import green from "@material-ui/core/colors/green"
 
 const theme = createMuiTheme({
   palette: {
-    primary: {
-      main: "#fbc02d",
-    },
+    primary: green,
     secondary: {
-      main: "#fbc02d",
+      main: "#c62828",
     },
   },
   typography: {
@@ -17,12 +16,12 @@ const theme = createMuiTheme({
   },
 })
 
-function PongSlide() {
+function SpaceInvadersSlide() {
   return (
     <MuiThemeProvider theme={theme}>
-      <Pong color={theme.palette.primary.main} />
+      <SpaceInvaders color={theme.palette.primary.main} />
     </MuiThemeProvider>
   )
 }
 
-export default PongSlide
+export default SpaceInvadersSlide

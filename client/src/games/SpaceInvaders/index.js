@@ -12,9 +12,9 @@ function Slide(props) {
   return (
     <SlidePaper color={color}>
       <GameText
-        year="1972"
-        title="Pong"
-        description="One of the first majorly popular videogames presents a simple yet uncluttered monochromatic board and uses symmetry to create dynamic visuals with shapes as simple as those found in basic geometry. Stripped down to an essential table tennis paraphernalia — a score screen and two pads hitting a ball across a net — Pong serves as an example of art and game design working in close tandem at its very abstract."
+        year="1978"
+        title="Space Invaders"
+        description="A staple of sci-fi aesthetics - a battle between mankind and belligerent aliens - has found its pixel art interpretation in another early arcade game. Here, the shapes tell a story of a technological clash: the human player is a simple tank-like unit moving between rounded off defenses, while bio-mechanical looking aliens resemble eerie oceanic creatures with swaying tentacles as they continuously inch downward. This archetypical imagery helped propel the game to an iconic status."
       />
       <ImageGridList
         tileData={tileData}
@@ -22,7 +22,7 @@ function Slide(props) {
         cellHeight={160}
         lightboxContent={lightboxContent}
       />
-      <NextSlideButton text="Let's continue!" />
+      <NextSlideButton text="What's next?" />
     </SlidePaper>
   )
 }
