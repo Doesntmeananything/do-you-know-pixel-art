@@ -1,5 +1,4 @@
 import React from "react"
-import { withStyles } from "@material-ui/core/styles"
 import SlidePaper from "../../components/slidePaper"
 import GameText from "../../components/gameText"
 import ImageGridList from "../../components/imageGridList"
