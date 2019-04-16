@@ -91,7 +91,7 @@ class ImageGridList extends React.Component {
                     zIndex: "1",
                   }}
                 >
-                  <PlayIcon style={{ fontSize: "4rem" }} color="primary" />
+                  <PlayIcon style={{ fontSize: "4rem" }} color="secondary" />
                 </div>
               )}
               <img src={tile.img} alt={tile.title} />
