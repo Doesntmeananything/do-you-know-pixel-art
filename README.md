@@ -32,6 +32,7 @@ Reference list: https://pixelation.org/index.php?topic=19575.0
 ### Server structure
 
 Under consideration. Dubious necessity if the client-side static resource optimisation is good enough.
+TODO: move to a separate repository.
 
 Otherwise, looking at Node/Express: Implement SSR and code-splitting to optimise static resource loading.
 
