@@ -11,8 +11,7 @@
 ## Table of Contents
 
 1. [List of notable games](https://github.com/Doesntmeananything/do-you-know-pixel-art#list-of-notable-games)
-2. [Server structure](https://github.com/Doesntmeananything/do-you-know-pixel-art#server-structure)
-3. [Client structure](https://github.com/Doesntmeananything/do-you-know-pixel-art#client-structure)
+2. [Client structure](https://github.com/Doesntmeananything/do-you-know-pixel-art#client-structure)
 
 ### List of notable games:
 
@@ -29,13 +28,6 @@
 
 Reference list: https://pixelation.org/index.php?topic=19575.0
 
-### Server structure
-
-Under consideration. Dubious necessity if the client-side static resource optimisation is good enough.
-TODO: move to a separate repository.
-
-Otherwise, looking at Node/Express: Implement SSR and code-splitting to optimise static resource loading.
-
 ### Client structure
 
-React: Store states about current app progress and component interactions.
+React: Create an architecture of components and store states about current app progress.
