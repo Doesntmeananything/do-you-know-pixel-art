@@ -34,4 +34,4 @@ Reference list: https://pixelation.org/index.php?topic=19575.0
 
 React: create an architecture of components and store states about current app progress.
 Gatsby: ensure image and SEO optimisations.
-Material-ui: use a mature and customisable ui-kit for a consistent look.
+Material-UI: use a mature and customisable ui-kit for a consistent look.
