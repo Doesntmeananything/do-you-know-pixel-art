@@ -7,7 +7,7 @@
 - Create a slide React component ✔️
 - Hook up styling
   - Add drop caps to paragraphs
-  - Add interesting transition between slides (inspiration: https://github.com/codrops/RotatedRevealers)
+  - Add interesting transitions between slides (inspiration: https://github.com/codrops/RotatedRevealers)
 - Design a code-splitting approach
 
 ## Table of Contents
