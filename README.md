@@ -8,7 +8,7 @@
 - Hook up styling
   - Add drop caps to paragraphs
   - Add interesting transitions between slides (inspiration: https://github.com/codrops/RotatedRevealers)
-- Do image optimisations
+- Do image loading optimisations
 
 ## Table of Contents
 
