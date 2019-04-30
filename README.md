@@ -8,7 +8,7 @@
 - Hook up styling
   - Add drop caps to paragraphs
   - Add interesting transitions between slides (inspiration: https://github.com/codrops/RotatedRevealers)
-- Design a code-splitting approach
+- Do image optimisations
 
 ## Table of Contents
 
