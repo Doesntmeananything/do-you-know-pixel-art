@@ -108,7 +108,7 @@ class ImageGridList extends React.Component {
             onMoveNextRequest={this.gotoNext}
             onMovePrevRequest={this.gotoPrevious}
             onClickThumbnail={this.gotoImage}
-            enableZoom={currentImage > 0}
+            enableZoom={true}
             style={{ display: "flex", placeItems: "center" }}
           />
         )}
