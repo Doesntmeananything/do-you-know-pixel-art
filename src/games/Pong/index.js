@@ -7,7 +7,7 @@ import tileData from "./tileData"
 import lightboxContent from "./lightboxContent"
 
 function Slide(props) {
-  const { classes, color } = props
+  const { color } = props
   return (
     <SlidePaper color={color}>
       <GameText
