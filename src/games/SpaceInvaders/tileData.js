@@ -22,7 +22,7 @@ const tileData = [
   {
     img: image3,
     cols: 1,
-    title: "Elusive red UFO flying high above the rest",
+    title: "Elusive red UFO flying high above",
   },
 ]
 
