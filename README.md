@@ -32,6 +32,6 @@ Reference list: https://pixelation.org/index.php?topic=19575.0
 
 ### Client structure
 
-React: create an architecture of components and store states about current app progress.
-Gatsby: ensure image and SEO optimisations.
-Material-UI: use a mature and customisable ui-kit for a consistent look.
+- React: create an architecture of components and store states about current app progress.
+- Gatsby: ensure image and SEO optimisations.
+- Material-UI: use a mature and customisable ui-kit for a consistent look.
