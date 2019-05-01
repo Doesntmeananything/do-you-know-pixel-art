@@ -19,7 +19,7 @@
 
 1. Pong ✔️
 2. Space Invaders ✔️
-3. Pacman
+3. Pacman ✔️
 4. Super Mario Brothers
 5. Castlevania 3
 6. Sonic (?)
