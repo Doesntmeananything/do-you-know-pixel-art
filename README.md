@@ -23,7 +23,7 @@
 4. Super Mario Brothers ✔️
 5. Castlevania 3 ✔️
 6. Sonic ✔️
-7. Super Metroid
+7. Super Metroid ✔️
 8. Castlevania SOTN
 9. SF 3rd Strike
 10. New-school: Cave Story, Spelunky & Co
@@ -33,5 +33,5 @@ Reference list: https://pixelation.org/index.php?topic=19575.0
 ### Client structure
 
 - React: create an architecture of components and store states about current app progress.
-- Gatsby: ensure image and SEO optimisations.
+- Gatsby: utilise scaffolding and ensure image and SEO optimisations.
 - Material-UI: use a mature and customisable ui-kit for a consistent look.
