@@ -13,7 +13,7 @@ function Slide(props) {
       <GameText
         year="1997"
         title="Castlevania: Symphony of the Night"
-        description="The inexorable march of technology not only opens space for new ideas to be realised, but also closes opportunity window for the older techniques to flourish and live up to their full potential. In the late 90s, entertainment industry was trending heavily towards 3D, and deep forays back into 2D weren't particularly welcomed neither by the general public, nor publishers. Those who were betting on 2D thus chose late mastery instead of early adoption, a decision that could be fatal at the time. In spite of all, it was decided to infuse an old series with new mechanics and finish it with the best pixel art had to offer. And a classic game was born, finishing the half of now fully mature genre of platformers, 'metroidvanias'."
+        description="The inexorable march of technology not only opens space for new ideas to be realised, but also closes opportunity window for the older techniques to flourish and live up to their full potential. In the late 90s, entertainment industry was trending heavily towards 3D, and deep forays back into 2D weren't particularly welcomed neither by the general public, nor publishers. Those who were betting on 2D thus chose late mastery instead of early adoption, a decision that could be fatal at the time. In spite of all, it was decided to infuse an old series with new mechanics and add to it the best that pixel art had to offer. And a classic game was born, completing the half of now fully mature genre of platformers, 'metroidvanias'."
       />
       <ImageGridList
         tileData={tileData}
