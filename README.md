@@ -24,7 +24,7 @@
 5. Castlevania 3 ✔️
 6. Sonic ✔️
 7. Super Metroid ✔️
-8. Castlevania SOTN
+8. Castlevania SOTN ✔️
 9. SF 3rd Strike
 10. New-school: Cave Story, Spelunky & Co
 
