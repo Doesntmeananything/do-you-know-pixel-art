@@ -11,7 +11,7 @@ const lightboxContent = {
     "Spelunky (2008) invites players to dive for treasures in iconic underground locations",
     "Terraria (2011) puts players in a sandbox to build, craft, and explore",
     "Shovel Knight (2014) pays homage to NES classics not by imitating but by recreating past sensibilities with a modern touch",
-    "Stardew Valley (2016) harkens back to the 16-bit era, which lends itself perfectly to tile-based farming",
+    "Stardew Valley (2016) hearkens back to the 16-bit era, which lends itself perfectly to tile-based farming",
   ],
 }
 
