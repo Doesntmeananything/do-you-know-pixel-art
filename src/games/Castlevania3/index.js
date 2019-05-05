@@ -5,7 +5,7 @@ import ImageGridList from "../../components/imageGridList"
 import NextSlideButton from "../../components/nextSlideButton"
 import tileData from "./tileData"
 import lightboxContent from "./lightboxContent"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 function Slide(props) {
   const { color } = props
@@ -22,9 +22,15 @@ function Slide(props) {
         cellHeight={160}
         lightboxContent={lightboxContent}
       />
-      <Link to="/sonic" style={{ margin: "auto", textDecorationLine: "none" }}>
+      <AniLink
+        cover
+        direction="up"
+        bg="#b71c1c"
+        to="/sonic-the-hedgehog"
+        style={{ margin: "auto", textDecorationLine: "none" }}
+      >
         <NextSlideButton text="What's next?" />
-      </Link>
+      </AniLink>
     </SlidePaper>
   )
 }

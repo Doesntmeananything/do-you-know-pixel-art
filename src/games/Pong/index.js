@@ -5,7 +5,7 @@ import ImageGridList from "../../components/imageGridList"
 import NextSlideButton from "../../components/nextSlideButton"
 import tileData from "./tileData"
 import lightboxContent from "./lightboxContent"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 function Slide(props) {
   const { color } = props
@@ -22,9 +22,14 @@ function Slide(props) {
         cellHeight={160}
         lightboxContent={lightboxContent}
       />
-      <Link to="/si" style={{ margin: "auto", textDecorationLine: "none" }}>
+      <AniLink
+        paintDrip
+        hex="#4caf50"
+        to="/space-invaders"
+        style={{ margin: "auto", textDecorationLine: "none" }}
+      >
         <NextSlideButton text="Let's continue!" />
-      </Link>
+      </AniLink>
     </SlidePaper>
   )
 }

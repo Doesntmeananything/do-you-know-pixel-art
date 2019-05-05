@@ -7,7 +7,7 @@
 - Create a slide React component ✔️
 - Hook up styling
   - Add drop caps to paragraphs
-  - Add interesting transitions between slides (inspiration: https://github.com/codrops/RotatedRevealers; but default Gatsby transitions can be enough!)
+  - Add interesting transitions between slides (inspiration: https://github.com/codrops/RotatedRevealers; but default Gatsby transitions can be enough!) ✔️
   - Add a Sitemap
 - Do image loading optimisations
 
@@ -26,8 +26,8 @@
 6. Sonic ✔️
 7. Super Metroid ✔️
 8. Castlevania SOTN ✔️
-9. SF 3rd Strike
-10. New-school: Cave Story, Spelunky & Co
+9. SF 3rd Strike ✔️
+10. New-school: Cave Story, Spelunky & Co ✔️
 
 Reference list: https://pixelation.org/index.php?topic=19575.0
 

@@ -5,7 +5,7 @@ import ImageGridList from "../../components/imageGridList"
 import NextSlideButton from "../../components/nextSlideButton"
 import tileData from "./tileData"
 import lightboxContent from "./lightboxContent"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 function Slide(props) {
   const { color } = props
@@ -22,9 +22,15 @@ function Slide(props) {
         cellHeight={160}
         lightboxContent={lightboxContent}
       />
-      <Link to="/mario" style={{ margin: "auto", textDecorationLine: "none" }}>
+      <AniLink
+        cover
+        direction="up"
+        bg="#42a5f5"
+        to="/super-mario-bros"
+        style={{ margin: "auto", textDecorationLine: "none" }}
+      >
         <NextSlideButton text="What's next?" />
-      </Link>
+      </AniLink>
     </SlidePaper>
   )
 }
