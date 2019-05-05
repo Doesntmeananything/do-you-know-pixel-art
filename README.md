@@ -8,6 +8,7 @@
 - Hook up styling
   - Add drop caps to paragraphs
   - Add interesting transitions between slides (inspiration: https://github.com/codrops/RotatedRevealers; but default Gatsby transitions can be enough!)
+  - Add Sitemap
 - Do image loading optimisations
 
 ## Table of Contents
