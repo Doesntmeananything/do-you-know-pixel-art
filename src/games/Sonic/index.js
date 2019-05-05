@@ -5,6 +5,7 @@ import ImageGridList from "../../components/imageGridList"
 import NextSlideButton from "../../components/nextSlideButton"
 import tileData from "./tileData"
 import lightboxContent from "./lightboxContent"
+import { Link } from "gatsby"
 
 function Slide(props) {
   const { color } = props
@@ -21,7 +22,12 @@ function Slide(props) {
         cellHeight={180}
         lightboxContent={lightboxContent}
       />
-      <NextSlideButton text="What's next?" />
+      <Link
+        to="/supermetroid"
+        style={{ margin: "auto", textDecorationLine: "none" }}
+      >
+        <NextSlideButton text="What's next?" />
+      </Link>
     </SlidePaper>
   )
 }
