@@ -1,7 +1,7 @@
 import React from "react"
-import image1 from "../../../public/static/media/Space Invaders/SI1.png"
-import image2 from "../../../public/static/media/Space Invaders/SI2.png"
-import image3 from "../../../public/static/media/Space Invaders/SI3.jpg"
+import image1 from "../../images/space Invaders/SI1.png"
+import image2 from "../../images/space Invaders/SI2.png"
+import image3 from "../../images/space Invaders/SI3.jpg"
 
 const lightboxContent = {
   media: [

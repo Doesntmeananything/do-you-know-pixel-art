@@ -1,5 +1,5 @@
-import image1 from "../../../public/static/media/Pong/Pong1.png"
-import image2 from "../../../public/static/media/Pong/Pong2Cabinet.jpg"
+import image1 from "../../images/pong/Pong1.png"
+import image2 from "../../images/pong/Pong2Cabinet.jpg"
 
 const tileData = [
   {

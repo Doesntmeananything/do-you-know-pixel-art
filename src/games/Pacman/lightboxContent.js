@@ -1,6 +1,6 @@
 import React from "react"
-import image1 from "../../../public/static/media/Pacman/PM1.png"
-import image2 from "../../../public/static/media/Pacman/PM2.png"
+import image1 from "../../images/pacman/PM1.png"
+import image2 from "../../images/pacman/PM2.png"
 
 const lightboxContent = {
   media: [
