@@ -11,7 +11,7 @@ const styles = {
     height: "100%",
   },
   text: {
-    paddingBottom: "6%",
+    paddingBottom: "10%",
   },
 }
 
