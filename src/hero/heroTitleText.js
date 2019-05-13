@@ -1,8 +1,9 @@
 import React from "react"
 import Typography from "@material-ui/core/Typography"
 import { withStyles } from "@material-ui/core/styles"
+import { useTrail, animated } from "react-spring"
 
-const styles = {
+const styles = theme => ({
   root: {
     display: "flex",
     alignItems: "flex-end",
@@ -11,15 +12,25 @@ const styles = {
     height: "100%",
   },
   text: {
-    paddingBottom: "10%",
+    paddingBottom: "5%",
+    [theme.breakpoints.down("sm")]: {
+      paddingBottom: "30%",
+      paddingLeft: "10%",
+    },
   },
-}
+})
 
-const words = ["Do ", "you ", "know ", "Pixel ", "Art", "?"]
+const items = ["Do", "you", "know", "Pixel Art?"]
+const config = { mass: 1, tension: 280, friction: 60 }
 
-function Types(props) {
+function HeroTitleText(props) {
   const { classes } = props
-
+  const trail = useTrail(items.length, {
+    config,
+    opacity: 1,
+    height: 80,
+    from: { opacity: 0, height: 0 },
+  })
   return (
     <div className={classes.root}>
       <Typography
@@ -28,10 +39,20 @@ function Types(props) {
         variant="h1"
         gutterBottom
       >
-        {words.map(word => word)}
+        {trail.map(({ height, ...rest }, index) => (
+          <animated.div
+            key={items[index]}
+            className="trails-text"
+            style={{
+              ...rest,
+            }}
+          >
+            <animated.div style={{ height }}>{items[index]}</animated.div>
+          </animated.div>
+        ))}
       </Typography>
     </div>
   )
 }
 
-export default withStyles(styles)(Types)
+export default withStyles(styles)(HeroTitleText)
