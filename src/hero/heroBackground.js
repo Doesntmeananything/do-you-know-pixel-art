@@ -18,7 +18,7 @@ const colors = [
 
 const styles = theme => ({
   root: {
-    background: "hotpink",
+    background: "#f06292",
     width: "100vw",
     height: "100vh",
     overflow: "hidden",
