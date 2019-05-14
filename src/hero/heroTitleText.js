@@ -13,14 +13,14 @@ const styles = theme => ({
   },
   text: {
     paddingBottom: "5%",
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       paddingBottom: "30%",
       paddingLeft: "10%",
     },
   },
 })
 
-const items = ["Do", "you", "know", "Pixel Art?"]
+const items = ["Do you", "know", "Pixel Art?"]
 const config = { mass: 1, tension: 280, friction: 60 }
 
 function HeroTitleText(props) {
@@ -28,7 +28,7 @@ function HeroTitleText(props) {
   const trail = useTrail(items.length, {
     config,
     opacity: 1,
-    height: 80,
+    height: 100,
     from: { opacity: 0, height: 0 },
   })
   return (
