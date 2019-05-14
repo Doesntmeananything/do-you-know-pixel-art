@@ -49,7 +49,7 @@ function getStepContent(step) {
     case 1:
       return "One such artistic style is Pixel Art. Perhaps continuing the ancient traditions of mosaics, its rich history spans just about half a century. But finding its place at the forefront of digital revolution, it evolved at breakneck pace, hitting both its zenith and nadir within a short period of time."
     case 2:
-      return `To trace the life of Pixel Art, we need to look at the most prominent instances of Pixel Art games. First, let's go back to a point in time when digital entertainment was still in its infancy…`
+      return `To trace the life of Pixel Art, we need to look at the most prominent instances of Pixel Art games. To begin, let's go back to a point in time when digital entertainment was still in its infancy…`
     default:
       return "Unknown step"
   }

@@ -25,7 +25,7 @@ function Slide(props) {
       <AniLink
         cover
         direction="up"
-        hex="#4caf50"
+        bg="#4caf50"
         to="/space-invaders"
         style={{ margin: "auto", textDecorationLine: "none" }}
       >
