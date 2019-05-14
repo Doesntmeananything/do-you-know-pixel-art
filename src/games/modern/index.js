@@ -5,11 +5,13 @@ import ImageGridList from "../../components/imageGridList"
 import NextSlideButton from "../../components/nextSlideButton"
 import tileData from "./tileData"
 import lightboxContent from "./lightboxContent"
+import NavigationDrawer from "../../navigation/navigationDrawer"
 
 function Slide(props) {
   const { color } = props
   return (
     <SlidePaper color={color}>
+      <NavigationDrawer />
       <GameText
         year="2004-20??"
         title="Modern Pixel Art Games"

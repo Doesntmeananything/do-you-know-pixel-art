@@ -6,11 +6,12 @@ import NextSlideButton from "../../components/nextSlideButton"
 import tileData from "./tileData"
 import lightboxContent from "./lightboxContent"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-
+import NavigationDrawer from "../../navigation/navigationDrawer"
 function Slide(props) {
   const { color } = props
   return (
     <SlidePaper color={color}>
+      <NavigationDrawer />
       <GameText
         year="1999"
         title="Street Fighter III: 3rd Strike"
