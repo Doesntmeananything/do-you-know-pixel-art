@@ -1,4 +1,5 @@
 import React from "react"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { withStyles } from "@material-ui/core/styles"
 import Stepper from "@material-ui/core/Stepper"
 import Step from "@material-ui/core/Step"
@@ -34,9 +35,6 @@ const styles = theme => ({
   },
   actionsContainer: {
     marginBottom: theme.spacing.unit * 2,
-  },
-  resetContainer: {
-    padding: theme.spacing.unit * 3,
   },
 })
 
@@ -106,32 +104,43 @@ class VerticalLinearStepper extends React.Component {
                       >
                         Go Back
                       </Button>
-                      <Button
-                        variant="contained"
-                        color="primary"
-                        onClick={this.handleNext}
-                        className={classes.button}
-                      >
-                        {activeStep === steps.length - 1
-                          ? "I'm Ready!"
-                          : "Next!"}
-                      </Button>
+                      {activeStep === steps.length - 1 ? (
+                        <AniLink
+                          paintDrip
+                          hex="#fbc02d"
+                          to="/pong"
+                          style={{ textDecorationLine: "none" }}
+                        >
+                          {" "}
+                          <Button
+                            variant="contained"
+                            color="primary"
+                            onClick={this.handleNext}
+                            className={classes.button}
+                          >
+                            {activeStep === steps.length - 1
+                              ? "I'm Ready!"
+                              : "Next!"}
+                          </Button>
+                        </AniLink>
+                      ) : (
+                        <Button
+                          variant="contained"
+                          color="primary"
+                          onClick={this.handleNext}
+                          className={classes.button}
+                        >
+                          {activeStep === steps.length - 1
+                            ? "I'm Ready!"
+                            : "Next!"}
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </StepContent>
               </Step>
             ))}
           </Stepper>
-          {activeStep === steps.length && (
-            <Paper elevation={0} className={classes.resetContainer}>
-              <Typography>
-                All steps completed - you&apos;re finished
-              </Typography>
-              <Button onClick={this.handleReset} className={classes.button}>
-                Start From Scratch
-              </Button>
-            </Paper>
-          )}
         </MuiThemeProvider>
       </div>
     )
