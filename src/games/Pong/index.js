@@ -23,7 +23,8 @@ function Slide(props) {
         lightboxContent={lightboxContent}
       />
       <AniLink
-        paintDrip
+        cover
+        direction="up"
         hex="#4caf50"
         to="/space-invaders"
         style={{ margin: "auto", textDecorationLine: "none" }}
