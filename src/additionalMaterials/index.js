@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography"
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 import { useSpring, animated, config } from "react-spring"
+import NavigationDrawer from "../navigation/navigationDrawer"
 
 const styles = {
   root: {
@@ -48,6 +49,7 @@ function AdditionalMaterials(props) {
             Addendum
           </Typography>
         </animated.div>
+        <NavigationDrawer />
         <Grid
           container
           spacing={32}
