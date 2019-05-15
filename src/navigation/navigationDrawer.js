@@ -9,6 +9,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon"
 import Menu from "@material-ui/icons/Menu"
 import IconButton from "@material-ui/core/IconButton"
 import HomeIcon from "@material-ui/icons/Home"
+import AddendumIcon from "@material-ui/icons/ViewDay"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { titles, releaseYears, gameRoutes } from "./navigationDrawerData"
 import { Location } from "@reach/router"
@@ -101,6 +102,25 @@ class NavigationDrawer extends React.Component {
                 <HomeIcon />
               </ListItemIcon>
               <ListItemText primary={"Home"} />
+            </ListItem>
+          </AniLink>
+          <AniLink
+            paintDrip
+            hex="#f06292"
+            to="/addendum"
+            style={{ textDecorationLine: "none" }}
+          >
+            <ListItem
+              button
+              classes={{
+                root: classes.listItem,
+                button: classes.listItemButton,
+              }}
+            >
+              <ListItemIcon>
+                <AddendumIcon />
+              </ListItemIcon>
+              <ListItemText primary={"Addendum"} />
             </ListItem>
           </AniLink>
         </List>
