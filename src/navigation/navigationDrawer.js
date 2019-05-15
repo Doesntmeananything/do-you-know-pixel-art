@@ -26,6 +26,9 @@ const styles = {
   listItemButton: {
     color: "#f06292",
   },
+  listItemFocus: {
+    color: "#f06292",
+  },
 }
 
 class NavigationDrawer extends React.Component {
@@ -68,6 +71,7 @@ class NavigationDrawer extends React.Component {
                     classes={{
                       root: classes.listItem,
                       button: classes.listItemButton,
+                      focusVisible: classes.listItemFocus,
                     }}
                   >
                     <ListItemText
