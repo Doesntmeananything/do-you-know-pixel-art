@@ -4,12 +4,12 @@ import AdditionalMaterialsCard from "./additionalMaterialsCard"
 import Typography from "@material-ui/core/Typography"
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
+import { useSpring, animated, config } from "react-spring"
 
 const styles = {
   root: {
     backgroundColor: "#f06292",
     height: "100vh",
-    width: "100wh",
   },
   pageTitle: {
     display: "flex",
@@ -35,12 +35,19 @@ const theme = createMuiTheme({
 
 function AdditionalMaterials(props) {
   const { classes } = props
+  const animation = useSpring({
+    from: { opacity: 0, transform: "translate(0, -50px)" },
+    to: { opacity: 1, transform: "translate(0, 0)" },
+    config: config.slow,
+  })
   return (
     <div className={classes.root}>
       <MuiThemeProvider theme={theme}>
-        <Typography className={classes.pageTitle} variant="h2" gutterBottom>
-          Addendum
-        </Typography>
+        <animated.div style={animation}>
+          <Typography className={classes.pageTitle} variant="h2" gutterBottom>
+            Addendum
+          </Typography>
+        </animated.div>
         <Grid
           container
           spacing={32}
@@ -52,7 +59,7 @@ function AdditionalMaterials(props) {
             <AdditionalMaterialsCard
               image="http://i.ytimg.com/vi/jqyC_S56B3k/hqdefault.jpg"
               title="How Video Games Were Made"
-              cardDescription="Youtuber strafefox masterfully unravels secrets of how game graphics were made during the 8- and 16-bit generation of consoles. Join him in this extremely informative and highly watchable video!"
+              cardDescription="YouTuber strafefox masterfully unravels secrets of how game graphics were made during the 8- and 16-bit generation of consoles. Join him in this extremely informative and highly watchable video!"
               cardButtonText="Watch on YouTube"
               to="https://www.youtube.com/watch?v=jqyC_S56B3k"
             />
