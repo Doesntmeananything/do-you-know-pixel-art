@@ -31,7 +31,7 @@ function Slide(props) {
         to="/sonic-the-hedgehog"
         style={{ margin: "auto", textDecorationLine: "none" }}
       >
-        <NextSlideButton text="What's next?" />
+        <NextSlideButton text="Moving on" />
       </AniLink>
     </SlidePaper>
   )

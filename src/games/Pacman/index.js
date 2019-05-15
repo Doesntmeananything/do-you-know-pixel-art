@@ -31,7 +31,7 @@ function Slide(props) {
         to="/super-mario-bros"
         style={{ margin: "auto", textDecorationLine: "none" }}
       >
-        <NextSlideButton text="What's next?" />
+        <NextSlideButton text="Onward!" />
       </AniLink>
     </SlidePaper>
   )

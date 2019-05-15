@@ -31,7 +31,7 @@ function Slide(props) {
         to="/castlevania-3"
         style={{ margin: "auto", textDecorationLine: "none" }}
       >
-        <NextSlideButton text="What's next?" />
+        <NextSlideButton text="Learn more!" />
       </AniLink>
     </SlidePaper>
   )

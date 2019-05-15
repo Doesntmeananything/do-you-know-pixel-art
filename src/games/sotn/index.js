@@ -31,7 +31,7 @@ function Slide(props) {
         to="/3rd-strike"
         style={{ margin: "auto", textDecorationLine: "none" }}
       >
-        <NextSlideButton text="What's next?" />
+        <NextSlideButton text="Continue!" />
       </AniLink>
     </SlidePaper>
   )

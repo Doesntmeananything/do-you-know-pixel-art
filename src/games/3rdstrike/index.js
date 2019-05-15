@@ -30,7 +30,7 @@ function Slide(props) {
         to="/modern-pixel-art-games"
         style={{ margin: "auto", textDecorationLine: "none" }}
       >
-        <NextSlideButton text="What's next?" />
+        <NextSlideButton text="Push forward!" />
       </AniLink>
     </SlidePaper>
   )
