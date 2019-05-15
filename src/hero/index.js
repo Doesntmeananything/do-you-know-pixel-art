@@ -4,7 +4,7 @@ import { withStyles } from "@material-ui/core/styles"
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons"
 import HeroTitleText from "./heroTitleText"
 import HeroSecondaryText from "./heroSecondaryText"
-import { FirstLayer, SecondLayer, ThirdLayer } from "./pixelAnimation"
+import { FirstLayer, SecondLayer, ThirdLayer } from "../pixelAnimation"
 
 const styles = theme => ({
   root: {
