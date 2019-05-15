@@ -31,7 +31,7 @@ function Slide(props) {
         to="/symphony-of-the-night"
         style={{ margin: "auto", textDecorationLine: "none" }}
       >
-        <NextSlideButton text="Next mission" />
+        <NextSlideButton text="Next mission!" />
       </AniLink>
     </SlidePaper>
   )

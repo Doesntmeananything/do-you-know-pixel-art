@@ -31,7 +31,7 @@ function Slide(props) {
         to="/super-metroid"
         style={{ margin: "auto", textDecorationLine: "none" }}
       >
-        <NextSlideButton text="OK!" />
+        <NextSlideButton text="I'm up to speed!" />
       </AniLink>
     </SlidePaper>
   )
