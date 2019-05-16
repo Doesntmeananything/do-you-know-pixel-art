@@ -45,7 +45,7 @@ function AdditionalMaterials(props) {
     <div className={classes.root}>
       <MuiThemeProvider theme={theme}>
         <animated.div style={animation}>
-          <Typography className={classes.pageTitle} variant="h2" gutterBottom>
+          <Typography className={classes.pageTitle} variant="h3" gutterBottom>
             Addendum
           </Typography>
         </animated.div>

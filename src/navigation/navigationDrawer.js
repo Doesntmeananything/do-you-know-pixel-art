@@ -11,6 +11,7 @@ import IconButton from "@material-ui/core/IconButton"
 import HomeIcon from "@material-ui/icons/Home"
 import AddendumIcon from "@material-ui/icons/ViewDay"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import FeedbackDialog from "./feebackDialog"
 import { titles, releaseYears, gameRoutes } from "./navigationDrawerData"
 import { Location } from "@reach/router"
 
@@ -123,6 +124,7 @@ class NavigationDrawer extends React.Component {
               <ListItemText primary={"Addendum"} />
             </ListItem>
           </AniLink>
+          <FeedbackDialog />
         </List>
       </div>
     )
@@ -140,14 +142,7 @@ class NavigationDrawer extends React.Component {
           open={this.state.right}
           onClose={this.toggleDrawer("right", false)}
         >
-          <div
-            tabIndex={0}
-            role="button"
-            onClick={this.toggleDrawer("right", false)}
-            onKeyDown={this.toggleDrawer("right", false)}
-          >
-            {sideList}
-          </div>
+          {sideList}
         </Drawer>
       </div>
     )
