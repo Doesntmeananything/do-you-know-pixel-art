@@ -16,7 +16,7 @@ function Slide(props) {
       <GameText
         year="1980"
         title="Pacman"
-        description="One of the greatest strengths of pixel art is its ability to create striking images using simple shapes and colours — and let your imagination do the rest. The highest point was reached here, where a yellow puck travelling a maze, chasing or being chased by four cartoonish ghosts, became a pop-culture icon."
+        description="Arguably the greatest strength of pixel art is its ability to create striking images using simple shapes and colours — and let your imagination do the rest. The highest point was reached here, where a yellow puck travelling a maze, chasing or being chased by four cartoonish ghosts, became a pop-culture icon."
       />
       <ImageGridList
         tileData={tileData}
