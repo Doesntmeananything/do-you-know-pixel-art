@@ -1,10 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `Do You Know Pixel Art?`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Take a look at the history and evolution of Pixel Art as it pertains to videogames.`,
+    siteUrl: `https://www.gatsbyjs.org`,
     author: `github.com/Doesntmeananything`,
+    image: "public/static/Do You Know Pixel Art.png",
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {
