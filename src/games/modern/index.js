@@ -1,4 +1,5 @@
 import React from "react"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import SlidePaper from "../../components/slidePaper"
 import GameText from "../../components/gameText"
 import ImageGridList from "../../components/imageGridList"
@@ -23,7 +24,14 @@ function Slide(props) {
         cellHeight={180}
         lightboxContent={lightboxContent}
       />
-      <NextSlideButton text="Finish!" />
+      <AniLink
+        paintDrip
+        hex="#fbc02d"
+        to="/addendum"
+        style={{ margin: "auto", textDecorationLine: "none" }}
+      >
+        <NextSlideButton text="Finish!" />
+      </AniLink>
     </SlidePaper>
   )
 }
