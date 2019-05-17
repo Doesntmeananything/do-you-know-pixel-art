@@ -12,6 +12,17 @@ const styles = theme => ({
       maxWidth: "50%",
     },
   },
+  paragraph: {
+    "&:first-letter": {
+      padding: "0 .3rem",
+      margin: "0 .3rem 0 0",
+      marginBottom: "-0.7rem",
+      fontStyle: "italic",
+      fontSize: "4rem",
+      float: "left",
+      lineHeight: "1",
+    },
+  },
 })
 
 function GameText(props) {
@@ -24,7 +35,9 @@ function GameText(props) {
       <Typography gutterBottom={true} variant="h4">
         {props.title}
       </Typography>
-      <Typography variant="subtitle1">{props.description}</Typography>
+      <Typography className={classes.paragraph} variant="subtitle1">
+        {props.description}
+      </Typography>
     </Grid>
   )
 }
