@@ -28,7 +28,7 @@ module.exports = {
         background_color: `#f06292`,
         theme_color: `#f06292`,
         display: `minimal-ui`,
-        icon: `src/images/pixel-icon-large.png`, // This path is relative to the root of the site.
+        icon: `src/images/pixel-icon-large-less-gradient.png`, // This path is relative to the root of the site.
         crossOrigin: `use-credentials`,
       },
     },
