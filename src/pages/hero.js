@@ -6,7 +6,7 @@ function LandingPage(props) {
   return (
     <>
       <SEO
-        title="Home"
+        title="Welcome"
         keywords={[
           `pixel`,
           `art`,
