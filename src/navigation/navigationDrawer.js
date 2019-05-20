@@ -89,7 +89,7 @@ class NavigationDrawer extends React.Component {
           <AniLink
             paintDrip
             hex="#f06292"
-            to="/hero"
+            to="/"
             style={{ textDecorationLine: "none" }}
           >
             <ListItem

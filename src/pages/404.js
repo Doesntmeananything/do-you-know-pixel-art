@@ -1,13 +1,20 @@
 import React from "react"
-
-import Layout from "../components/layout"
+import Typography from "@material-ui/core/Typography"
 import SEO from "../components/seo"
+import Layout from "../components/layout"
+import { Link } from "gatsby"
 
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <Typography variant="h2" gutterBottom>
+      PAGE NOT FOUND
+    </Typography>
+    <Typography component="p" variant="body1">
+      There's nothing here. <br />
+      <br />
+      <Link to="/">Try the home page instead?</Link>
+    </Typography>
   </Layout>
 )
 
