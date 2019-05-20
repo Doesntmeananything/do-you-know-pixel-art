@@ -29,13 +29,7 @@ module.exports = {
         theme_color: `#f06292`,
         display: `minimal-ui`,
         icon: `src/images/pixel-icon-large-gradient.png`, // This path is relative to the root of the site.
-        crossOrigin: `use-credentials`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
+        crossOrigin: `anonymous`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
