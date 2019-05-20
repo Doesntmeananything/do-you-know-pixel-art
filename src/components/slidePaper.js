@@ -19,13 +19,16 @@ const styles = theme => ({
       maxWidth: "none",
     },
     [theme.breakpoints.up("sm")]: {
-      maxWidth: 900,
+      maxWidth: 600,
+    },
+    [theme.breakpoints.up("md")]: {
+      maxWidth: 860,
     },
     [theme.breakpoints.up("lg")]: {
-      maxWidth: 1100,
+      maxWidth: 1180,
     },
     [theme.breakpoints.up("xl")]: {
-      maxWidth: 2300,
+      maxWidth: 1820,
     },
   },
 })
