@@ -4,7 +4,7 @@ import image3 from "../../images/castlevania3/castle3.jpg"
 
 const tileData = [
   {
-    img: "http://i.ytimg.com/vi/Cw0l0MUttsk/hqdefault.jpg",
+    img: "https://i.ytimg.com/vi/Cw0l0MUttsk/hqdefault.jpg",
     cols: 1,
     title: "Castlevania 3 gameplay",
     isVideo: true,

@@ -59,7 +59,7 @@ function AdditionalMaterials(props) {
         >
           <Grid item>
             <AdditionalMaterialsCard
-              image="http://i.ytimg.com/vi/jqyC_S56B3k/hqdefault.jpg"
+              image="https://i.ytimg.com/vi/jqyC_S56B3k/hqdefault.jpg"
               title="How Video Games Were Made"
               cardDescription="YouTuber strafefox masterfully unravels secrets of how game graphics were made during the 8- and 16-bit generation of consoles. Join him in this extremely informative and highly watchable video!"
               cardButtonText="Watch on YouTube"
@@ -68,7 +68,7 @@ function AdditionalMaterials(props) {
           </Grid>
           <Grid item>
             <AdditionalMaterialsCard
-              image="http://www.dinofarmgames.com/wp-content/uploads/2015/04/Auro-PC-title-screen-3x1-1024x577.png"
+              image="https://steamcdn-a.akamaihd.net/steam/apps/459680/ss_ac88422636705ce71e7d4534f3edadf7a571a641.1920x1080.jpg?t=1460555201"
               title="A Pixel Artist Renounces Pixel Art"
               cardDescription="Read the thoughts of a truly dedicated professional Pixel Artist, Blake Reynolds, about the past, the present, and the future of Pixel Art in this bittersweet blog post that became an instant classic."
               cardButtonText="Learn More"

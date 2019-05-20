@@ -3,7 +3,7 @@ import image2 from "../../images/pong/Pong2Cabinet.jpg"
 
 const tileData = [
   {
-    img: "http://i.ytimg.com/vi/fiShX2pTz9A/hqdefault.jpg",
+    img: "https://i.ytimg.com/vi/fiShX2pTz9A/hqdefault.jpg",
     cols: 1,
     title: "Pong Gameplay Video",
     isVideo: true,

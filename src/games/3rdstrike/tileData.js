@@ -4,7 +4,7 @@ import image3 from "../../images/3rdstrike/3rdstrike3.gif"
 
 const tileData = [
   {
-    img: "http://i.ytimg.com/vi/FCN7QBekjk8/hqdefault.jpg",
+    img: "https://i.ytimg.com/vi/FCN7QBekjk8/hqdefault.jpg",
     cols: 2,
     title: "3rd Strike intro video",
     isVideo: true,
@@ -25,7 +25,7 @@ const tileData = [
     title: "Ken's super full animation",
   },
   {
-    img: "http://i.ytimg.com/vi/JzS96auqau0/hqdefault.jpg",
+    img: "https://i.ytimg.com/vi/JzS96auqau0/hqdefault.jpg",
     cols: 3,
     title: "3rd Strike Evo Moment #34",
     isVideo: true,

@@ -4,7 +4,7 @@ import image3 from "../../images/spaceinvaders/SI3.jpg"
 
 const tileData = [
   {
-    img: "http://i.ytimg.com/vi/MU4psw3ccUI/hqdefault.jpg",
+    img: "https://i.ytimg.com/vi/MU4psw3ccUI/hqdefault.jpg",
     cols: 1,
     title: "Space Invaders Gameplay Video",
     isVideo: true,
