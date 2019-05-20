@@ -16,7 +16,7 @@ function Slide(props) {
       <GameText
         year="1994"
         title="Super Metroid"
-        description="In many ways, technological progress allows us to revisit our previous ideas and to reimagine and reiterate on them within a wider creative space. Almost a decade since the release of the original Metroid, its successor not only rose above most of the action games of the time, but added such irreducibly enticing elements to its exploration aspect as to inspire many games to come. The visual style of the game helped create a tangible cinematic feel in the vein of darker sci-fi action films, jumping effortlessly between suspense and thrill."
+        description="In many ways, technological progress allows us to revisit our previous ideas and to reimagine and reiterate on them within a wider creative space. Almost a decade since the release of the original Metroid, its successor not only rose above most of the action games of the time, but added such irreducible and enticing elements to its exploration aspect as to inspire many games to come. The visual style of the game helped create a tangible cinematic feel in the vein of darker sci-fi action films, jumping effortlessly between suspense and thrill."
       />
       <ImageGridList
         tileData={tileData}
