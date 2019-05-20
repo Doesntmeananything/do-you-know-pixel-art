@@ -2,22 +2,26 @@
 
 ## A showcase of the pixel art evolution timeline as it pertains to videogames
 
-## Todo
-
-- Create a slide React component ✔️
-- Hook up styling
-  - Add drop caps to paragraphs ✔️
-  - Add interesting transitions between slides (inspiration: https://github.com/codrops/RotatedRevealers; but default Gatsby transitions can be enough!) ✔️
-- Add a Sitemap ✔️
-- Add analytics
-- Do SEO ✔️
-
 ## Table of Contents
 
-1. [List of notable games](https://github.com/Doesntmeananything/do-you-know-pixel-art#list-of-notable-games)
-2. [Client structure](https://github.com/Doesntmeananything/do-you-know-pixel-art#client-structure)
+1. [Motivation](https://github.com/Doesntmeananything/do-you-know-pixel-art#motivation)
+2. [Tools](https://github.com/Doesntmeananything/do-you-know-pixel-art#tools)
+3. [List of games](https://github.com/Doesntmeananything/do-you-know-pixel-art#list-of-games)
+4. [Todo](https://github.com/Doesntmeananything/do-you-know-pixel-art#todo)
 
-### List of notable games:
+### Motivation
+
+2D art and Pixel Art in particular can be used to create stunningly beautiful and dynamic visuals for videogames, so it is interesting to track the evolution of Pixel Art across its history.
+
+### Tools
+
+To create the website, several popular front-end libraries were used:
+
+- React is used for its declarative approach to DOM building and component-oriented architecture;
+- Material-UI is used to provide a mature UI-kit structure and consistent but customisable look;
+- GatsbyJS is used because of its large number of optimisations out-of-the box and GraphQL extendability.
+
+### List of games:
 
 1. Pong ✔️
 2. Space Invaders ✔️
@@ -30,10 +34,12 @@
 9. SF 3rd Strike ✔️
 10. New-school: Cave Story, Spelunky & Co ✔️
 
-Reference list: https://pixelation.org/index.php?topic=19575.0
+### Todo
 
-### Client structure
-
-- React: create an architecture of components and store states about current app progress.
-- Gatsby: utilise scaffolding and ensure image and SEO optimisations.
-- Material-UI: use a mature and customisable ui-kit for a consistent look.
+- Create a slide React component ✔️
+- Hook up styling
+  - Add drop caps to paragraphs ✔️
+  - Add interesting transitions between slides (inspiration: https://github.com/codrops/RotatedRevealers; but default Gatsby transitions can be enough!) ✔️
+- Add a Sitemap ✔️
+- Do SEO ✔️
+- Add analytics
