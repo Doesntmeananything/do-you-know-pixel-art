@@ -7,6 +7,12 @@ module.exports = {
     image: "public/static/Do You Know Pixel Art.png",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        // Add any options here
+      },
+    },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
