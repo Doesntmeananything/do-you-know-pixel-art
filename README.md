@@ -45,3 +45,4 @@ To create the website, several popular front-end libraries were used:
 - Add a Sitemap ✔️
 - Do SEO ✔️
 - Add analytics
+- Look into layout bugs on slides at certain pixel widths
