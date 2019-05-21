@@ -1,8 +1,8 @@
-import image1 from "../../images/supermetroid/supermetroid1.gif"
-import image2 from "../../images/supermetroid/supermetroid2.gif"
-import image3 from "../../images/supermetroid/supermetroid3.gif"
-import image4 from "../../images/supermetroid/supermetroid4.gif"
-import image5 from "../../images/supermetroid/supermetroid5.gif"
+import image1 from "../../images/supermetroid/thumbnails/supermetroid1.webp"
+import image2 from "../../images/supermetroid/thumbnails/supermetroid2.webp"
+import image3 from "../../images/supermetroid/thumbnails/supermetroid3.webp"
+import image4 from "../../images/supermetroid/thumbnails/supermetroid4.webp"
+import image5 from "../../images/supermetroid/thumbnails/supermetroid5.webp"
 
 const tileData = [
   {

@@ -1,8 +1,8 @@
-import image1 from "../../images/modern/modern1.jpg"
-import image2 from "../../images/modern/modern2.png"
-import image3 from "../../images/modern/modern3.jpg"
-import image4 from "../../images/modern/modern4.jpg"
-import image5 from "../../images/modern/modern5.jpg"
+import image1 from "../../images/modern/thumbnails/modern1.webp"
+import image2 from "../../images/modern/thumbnails/modern2.webp"
+import image3 from "../../images/modern/thumbnails/modern3.webp"
+import image4 from "../../images/modern/thumbnails/modern4.webp"
+import image5 from "../../images/modern/thumbnails/modern5.webp"
 
 const tileData = [
   {

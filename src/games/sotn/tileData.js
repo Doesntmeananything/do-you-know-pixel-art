@@ -1,7 +1,7 @@
-import image1 from "../../images/sotn/sotn1.png"
-import image2 from "../../images/sotn/sotn2.jpg"
-import image3 from "../../images/sotn/sotn3.png"
-import image4 from "../../images/sotn/sotn4.png"
+import image1 from "../../images/sotn/thumbnails/sotn1.webp"
+import image2 from "../../images/sotn/thumbnails/sotn2.webp"
+import image3 from "../../images/sotn/thumbnails/sotn3.webp"
+import image4 from "../../images/sotn/thumbnails/sotn4.webp"
 
 const tileData = [
   {

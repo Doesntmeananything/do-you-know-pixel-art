@@ -1,5 +1,5 @@
-import image1 from "../../images/pacman/PM1.png"
-import image2 from "../../images/pacman/PM2.png"
+import image1 from "../../images/pacman/thumbnails/PM1.webp"
+import image2 from "../../images/pacman/thumbnails/PM2.webp"
 
 const tileData = [
   {

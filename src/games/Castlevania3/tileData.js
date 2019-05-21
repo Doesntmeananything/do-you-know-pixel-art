@@ -1,6 +1,6 @@
-import image1 from "../../images/castlevania3/castle1.gif"
-import image2 from "../../images/castlevania3/castle2.png"
-import image3 from "../../images/castlevania3/castle3.jpg"
+import image1 from "../../images/castlevania3/thumbnails/castle1.webp"
+import image2 from "../../images/castlevania3/thumbnails/castle2.webp"
+import image3 from "../../images/castlevania3/thumbnails/castle3.webp"
 
 const tileData = [
   {

@@ -1,6 +1,6 @@
-import image1 from "../../images/spaceinvaders/SI1.png"
-import image2 from "../../images/spaceinvaders/SI2.png"
-import image3 from "../../images/spaceinvaders/SI3.jpg"
+import image1 from "../../images/spaceinvaders/thumbnails/SI1.webp"
+import image2 from "../../images/spaceinvaders/thumbnails/SI2.webp"
+import image3 from "../../images/spaceinvaders/thumbnails/SI3.webp"
 
 const tileData = [
   {

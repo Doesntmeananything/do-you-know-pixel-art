@@ -1,14 +1,13 @@
-import image1 from "../../images/mario/mario1.jpg"
-import image2 from "../../images/mario/mario2.gif"
-import image3 from "../../images/mario/mario3.jpg"
-import image4 from "../../images/mario/mario4.png"
+import image1 from "../../images/mario/thumbnails/mario1.webp"
+import image2 from "../../images/mario/thumbnails/mario2.webp"
+import image3 from "../../images/mario/thumbnails/mario3.webp"
+import image4 from "../../images/mario/thumbnails/mario4.webp"
 
 const tileData = [
   {
     img: image1,
     cols: 1,
     title: "Mario stage start",
-    isVideo: false,
   },
   {
     img: image2,

@@ -1,6 +1,6 @@
-import image1 from "../../images/3rdstrike/3rdstrike1.jpg"
-import image2 from "../../images/3rdstrike/3rdstrike2.gif"
-import image3 from "../../images/3rdstrike/3rdstrike3.gif"
+import image1 from "../../images/3rdstrike/thumbnails/3rdstrike1.webp"
+import image2 from "../../images/3rdstrike/thumbnails/3rdstrike2.webp"
+import image3 from "../../images/3rdstrike/thumbnails/3rdstrike3.webp"
 
 const tileData = [
   {
