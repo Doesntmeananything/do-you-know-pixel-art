@@ -44,7 +44,7 @@ function AdditionalMaterialsCard(props) {
         <Typography component="p">{props.cardDescription}</Typography>
       </CardContent>
       <CardActions className={classes.actionsRoot}>
-        <a href={props.to} className={classes.link} target="_blank">
+        <a href={props.to} className={classes.link} target="_blank" rel="noopener">
           <Button
             variant="contained"
             color="primary"
