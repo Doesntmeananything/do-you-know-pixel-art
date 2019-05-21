@@ -2,6 +2,8 @@
 
 ## A showcase of the pixel art evolution timeline as it pertains to videogames
 
+Demo: https://boring-mayer-fdb8e8.netlify.com/
+
 ## Table of Contents
 
 1. [Motivation](https://github.com/Doesntmeananything/do-you-know-pixel-art#motivation)
