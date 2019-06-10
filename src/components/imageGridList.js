@@ -9,10 +9,10 @@ import "lightbox-react/style.css"
 
 const styles = theme => ({
   images: {
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("md")]: {
       maxWidth: "none",
     },
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.up("md")]: {
       maxWidth: "50%",
     },
   },

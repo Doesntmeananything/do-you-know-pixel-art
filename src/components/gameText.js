@@ -5,10 +5,10 @@ import Grid from "@material-ui/core/Grid"
 
 const styles = theme => ({
   text: {
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("md")]: {
       maxWidth: "none",
     },
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.up("md")]: {
       maxWidth: "50%",
     },
   },
